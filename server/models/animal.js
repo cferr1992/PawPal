@@ -7,7 +7,7 @@ const AnimalSchema = new Schema ({
     name: String,
     age: String,
     breed: String,
-    email: String
+    email: String,
     description: String
 
 });
