@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
+import Dropdown from './Dropdown.js';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 class Header extends Component {
-  
   render() {
     return (
         <div className="container">
-            <select>
-                <option>Select a breed</option>
-                <option value="Beagle">Beagle</option>
-                <option value="Boxer">Boxer</option>
-                <option value="Bulldog">Bulldog</option>
-                <option value="Corgi">Corgi</option>
-                <option value="Dachshund">Dachshund</option>
-                <option value="German-Shepherd">German Shepherd</option>
-                <option value="Golden-Retriver">Golden Retriever</option>
-                <option value="Husky">Husky</option>
-                <option value="Labrador-Retriever">Labrador Retriever</option>
-                <option value="Poodle">Poodle</option>
-                <option value="Pug">Pug</option>
-                <option value="Rottweiler">Rottweiler</option>
-                <option value="Terrier">Terrier</option>
-            </select>
+            <Grid>
+                <Row className="header show-grid">
+                    <Col className="logo" xs={12} md={3}>
+                        <code>
+                            PawPal
+                        </code>
+                    </Col>
+                    <Col className="dropdown" xs={12} md={6}>
+                        <code>
+                            <Dropdown />
+                        </code>
+                    </Col>
+                    <Col className="sign-in" xs={12} md={3}>
+                        <code>
+                            Login/Signup
+                        </code>
+                    </Col>
+                </Row>
+            </Grid>
         </div>
     );
   }
 }
-
 export default Header;
