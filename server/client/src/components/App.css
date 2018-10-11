@@ -1,4 +1,32 @@
 .App {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
 }
+
+.animal-container {
+  width: 30%;
+  display: inline-block;
+  margin: 10px;
+}
+
+.animal-field {
+  margin-left: 3px;
+  margin-right: 3px;
+  float: left;
+}
+
+.animal-image {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+span {
+  float: left;
+  clear: left;
+}
+
+/* .side {
+  width: 16.66667%;
+  height: 10px;
+  margin: 0px;
+} */

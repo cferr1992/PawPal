@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const ROOT_URL = "http://localhost:3000"
+const ROOT_URL = "http://localhost:5000"
 
 export const FETCH_ANIMALS = "FETCH_ANIMALS"
 
@@ -23,7 +23,7 @@ export function fetchAnimals() {
   
   let url = ROOT_URL + '/animals'
   const request = axios.get(url, {headers: { "Content-Type" : "application/json"}})
-
+console.log(request)
   return {
     type: FETCH_ANIMALS,
     payload: request

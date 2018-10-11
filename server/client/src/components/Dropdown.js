@@ -1,7 +1,11 @@
 import React from 'react';
+import { connect } from "react-redux"
+import { bindActionCreators } from "redux"
 import { fetchAnimals } from '../actions'
 
 import './Dropdown.css';
+
+//Creates dropdown bar to search for dogs by breed
 
 class Dropdown extends React.Component {
   constructor(){
@@ -30,13 +34,13 @@ class Dropdown extends React.Component {
   }
 
   componentDidMount() {
-    console.log(fetchAnimals());
+    this.props.fetchAnimals();
   }
 
   render() {
     return (
       <div  className="dropdown" style = {{background:"red",width:"200px"}} >
-        <div className="button" onClick={this.showDropdownMenu}> My Setting </div>
+        <div className="button" onClick={this.showDropdownMenu}> Select a breed </div>
           { this.state.displayMenu ? (
             <ul>
               <li><a className="active" href="#Beagle">Beagle</a></li>
@@ -52,4 +56,9 @@ class Dropdown extends React.Component {
   }
 }
 
-export default Dropdown;
+
+ function mapDispatchToProps(dispatch) {
+  return bindActionCreators({fetchAnimals}, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(Dropdown);

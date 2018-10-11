@@ -6,7 +6,7 @@ var cors = require('cors')
 mongoose.connect('mongodb://localhost/animals')
 
 const app = express();
-app.user(cors())
+app.use(cors())
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -17,7 +17,7 @@ const mainRoutes = require('./routes/main')
 
 app.use(mainRoutes)
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log('Node.js listening on port ' + PORT)
 });

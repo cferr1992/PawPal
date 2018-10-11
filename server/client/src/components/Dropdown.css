@@ -34,11 +34,12 @@ li:hover {
     width:178px;
     height:20px;
     background-color:#ff3232 ;
-    padding:12px;
     margin: 5px;
     border-radius:5px;
     font-weight:bold;
     color:white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 .button:before{
     content:"";
