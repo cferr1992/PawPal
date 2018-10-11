@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchProducts } from '../actions'
+import { fetchAnimals } from '../actions'
 
 import './Dropdown.css';
 
@@ -30,7 +30,7 @@ class Dropdown extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchAnimals();
+    console.log(fetchAnimals());
   }
 
   render() {

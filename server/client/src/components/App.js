@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header.js';
 import AnimalList from './AnimalList.js';
 import './App.css';
