@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .animal-container {
   width: 30%;
@@ -12,6 +12,7 @@
   margin-left: 3px;
   margin-right: 3px;
   float: left;
+  font-size:1vw;
 }
 
 .animal-image {

@@ -1,4 +1,4 @@
-.logo {
+/* .logo {
     font-size: 32px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -7,4 +7,27 @@
 .container {
     border-width: 2px;
     font-family: 'Roboto', sans-serif;
+}
+
+.logo-image {
+    width: 250px;
+    height: 80px;
+}
+
+.header {
+    background-color: #AAAAAA;
+    border: 5px;
+} */
+
+.nav-wrapper {
+    background-color: #1166DA;
+}
+
+a.brand-logo {
+    margin-left: 10px;
+}
+
+.logo {
+    height: 75px;
+    width: 225px;
 }

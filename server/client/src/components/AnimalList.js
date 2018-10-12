@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { connect } from "react-redux"
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-import Animal from './Animal.js';
-import './Animal.css';
+import { Pagination } from 'react-materialize'
+import Animal from './Animal.js'
+// import './Animal.css';
 
 //Creates a list of animals
 
@@ -18,6 +19,7 @@ class AnimalList extends Component {
             )
           }
         </div>
+        <Pagination items={9} activePage={1} maxButtons={5} />
       </div>
     );
   }
