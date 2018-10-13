@@ -2,18 +2,22 @@
     {
         "imgURL": "./pictures/Buddy.jpg",
         "name": "Buddy",
-        "age": " 2 years",
+        "age": " 2 Years",
         "breed": "Beagle",
         "email": "buddythebeagle@gmail.com",
-        "description": "Buddy is a Beagle"
+        "description": "Buddy is a Beagle",
+        "lat": "36.018330",
+        "lng": "-78.909087"
     },
     {
         "imgURL": "./pictures/Bartholomew.jpg",
         "name": "Bartholomew",
-        "age": "4 years",
+        "age": "4 Years",
         "breed": "Boxer",
         "email": "bartholomewthebeagle@gmail.com",
-        "description": "Bartholomew is a Boxer"
+        "description": "Bartholomew is a Boxer",
+        "lat": "35.834742",
+        "lng": "-78.832850"
     },
     {
         "imgURL": "./pictures/Bill.jpg",
@@ -21,63 +25,79 @@
         "age": "7 months",
         "breed": "Bulldog",
         "email": "billthebulldog@gmail.com",
-        "description": "Bill is a Bulldog"
+        "description": "Bill is a Bulldog",
+        "lat": "35.941240",
+        "lng": "-79.021085"
     },
     {
         "imgURL": "./pictures/Clide.jpg",
         "name": "Clide",
-        "age": "8 years",
+        "age": "8 Years",
         "breed": "Corgi",
         "email": "clidethecorgi@gmail.com",
-        "description": "Clide is a Corgi"
+        "description": "Clide is a Corgi",
+        "lat": "35.787605",
+        "lng": "-78.637600"
     },
     {
         "imgURL": "./pictures/Dixie.jpg",
         "name": "Dixie",
-        "age": "3 months",
+        "age": "3 Months",
         "breed": "Dachshund",
         "email": "dixiethedachshund@gmail.com",
-        "description": "Dixie is a Dachshund"
+        "description": "Dixie is a Dachshund",
+        "lat": "35.780615",
+        "lng": "-78.792634"
     },
     {
         "imgURL": "./pictures/Greg.jpg",
         "name": "Greg",
-        "age": "8 months",
+        "age": "8 Months",
         "breed": "German Shepherd",
         "email": "gregthegermanshepherd@gmail.com",
-        "description": "Greg is a German Shepherd."
+        "description": "Greg is a German Shepherd.",
+        "lat": "35.873231",
+        "lng": "-78.679638"
     },
     {
         "imgURL": "./pictures/Gloria.jpg",
         "name": "Gloria",
-        "age": "4 months",
+        "age": "4 Months",
         "breed": "Golden Retriever",
         "email": "gloriathegoldenretriever@gmail.com",
-        "description": "Gloria is a Golden Retriever"
+        "description": "Gloria is a Golden Retriever",
+        "lat": "35.958443",
+        "lng": "-78.939020"
     },
     {
         "imgURL": "./pictures/Henry.jpg",
         "name": "Henry",
-        "age": "6 months",
+        "age": "6 Months",
         "breed": "Husky",
         "email": "henrythehusky@gmail.com",
-        "description": "Henry is a Husky"
+        "description": "Henry is a Husky",
+        "lat": "36.038050",
+        "lng": "-78.913048"
     },
     {
         "imgURL": "./pictures/Lance.jpg",
         "name": "Lance",
-        "age": "9 months",
+        "age": "9 Months",
         "breed": "Labrador Retriever",
         "email": "lancethelabradorretriever@gmail.com",
-        "description": "Lance is a Labrador Retriever"
+        "description": "Lance is a Labrador Retriever",
+        "lat": "36.070068",
+        "lng": "-79.099732"
     },
     {
         "imgURL": "./pictures/Paul.jpg",
         "name": "Paul",
-        "age": "15 months",
+        "age": "15 Months",
         "breed": "Poodle",
         "email": "paulthepoodle@gmail.com",
-        "description": "Paul is a Poodle"
+        "description": "Paul is a Poodle",
+        "lat": "35.903772",
+        "lng": "-79.091335"
     },
     {
         "imgURL": "./pictures/Princess.jpg",
@@ -85,22 +105,28 @@
         "age": "11 months",
         "breed": "Pug",
         "email": "princessthepug@gmail.com",
-        "description": "Princess is a Pug"
+        "description": "Princess is a Pug",
+        "lat": "35.656007",
+        "lng": "-78.835750"
     },
     {
         "imgURL": "./pictures/Randy.jpg",
         "name": "Randy",
-        "age": "3 years",
+        "age": "3 Years",
         "breed": "Rottweiler",
         "email": "randytherottweiler@gmail.com ",
-        "description": "Randy is a Rottweiler"
+        "description": "Randy is a Rottweiler",
+        "lat": "35.791256",
+        "lng": "-78.484333"
     },
     {
         "imgURL": "./pictures/Thomas.jpg",
         "name": "Thomas",
-        "age": "9 years",
+        "age": "9 Years",
         "breed": "Terrier",
         "email": "thomastheterrier@gmail.com",
-        "description": "Thomas is a Terrier"
+        "description": "Thomas is a Terrier",
+        "lat": "36.016580",
+        "lng": "-78.984278"
     }
 ]

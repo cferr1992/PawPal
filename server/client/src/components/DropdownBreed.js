@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
-import { fetchAnimals } from '../actions'
-import { Dropdown, Button, NavItem } from 'react-materialize'
+import { fetchAnimals, fetchByBreed } from '../actions'
+import { Dropdown, Button, NavItem, Pagination } from 'react-materialize'
 
 import './Dropdown.css'
 
@@ -13,24 +13,43 @@ class DropdownBreed extends Component {
     super();
 
     this.state = {
-       displayMenu: false
+       displayMenu: false,
+       currentPage: 1,
+       selectedBreed: '',
     };
 
 };
 
+  updateState(key, value) {
+  let property = {currentPage: 1};
+  property[key] = value;
+
+  this.setState(property, () => this.fetchData())
+}
+
+fetchData() {
+  this.props.fetchAnimals(this.state.selectedBreed, this.state.currentPage);
+}
+
   componentDidMount() {
-    this.props.fetchAnimals();
+    this.fetchData();
   }
 
+getByBreed(breed) {
+  this.props.fetchByBreed(breed);
+}
+
   render() {
+
     return (
+      <div>
       <div  className="dropdown">
 
-      <Dropdown trigger={
+      <Dropdown onChange={event => this.updateState('breed', event)} trigger={
         <Button>Select a breed</Button>
         }>
-          <NavItem>Beagle</NavItem>
-          <NavItem>Boxer</NavItem>
+          <NavItem onClick={() => this.updateState('selectedBreed','Beagle')}>Beagle</NavItem>
+          <NavItem onClick={() => this.updateState('selectedBreed','Boxer')}>Boxer</NavItem>
           <NavItem>Bulldog</NavItem>
           <NavItem>Corgi</NavItem>
           <NavItem>Dachshund</NavItem>
@@ -44,38 +63,30 @@ class DropdownBreed extends Component {
           <NavItem>Terrier</NavItem>
       </Dropdown>
 
-
-
-
-        {/* <div className="button" onClick={this.showDropdownMenu}> Select a breed </div>
-          { this.state.displayMenu ? (
-            // <ul>
-            //   <li><a className="active" href="#Beagle">Beagle</a></li>
-            //   <li><a href="#Boxer">Boxer</a></li>
-            //   <li><a href="#Bulldog">Bulldog</a></li>
-            //   <li><a href="#Corgi">Corgi</a></li>
-            //   <li><a href="#Dachshund">Dachshund</a></li>
-            //   <li><a href="#German-Shepherd">German Shepherd</a></li>
-            //   <li><a href="#Golden-Retriever">Golden Retriever</a></li>
-            //   <li><a href="#Husky">Husky</a></li>
-            //   <li><a href="#Labrador-Retriever">Labrador Retriever</a></li>
-            //   <li><a href="#Poodle">Poodle</a></li>
-            //   <li><a href="#Pug">Pug</a></li>
-            //   <li><a href="#Rottweiler">Rottweiler</a></li>
-            //   <li><a href="#Terrier">Terrier</a></li>
-            // </ul>
-        ):
-        (
-          null
-        )} */}
        </div>
+      <div>
+        {this.props.children}
+      </div>
+      <div>
+      <Pagination onSelect={event => this.updateState('currentPage', event)} className="pagination" items={this.props.pages} activePage={1} maxButtons={5} />
+      </div>
+      </div>
     );
   }
 }
 
-
- function mapDispatchToProps(dispatch) {
-  return bindActionCreators({fetchAnimals}, dispatch);
+function mapStateToProps(state) {
+  let {breeds, currentPage, animal} = state;
+  return {
+    breeds,
+    currentPage,
+    pages:animal.pages
+  };
 }
 
-export default connect(null, mapDispatchToProps)(DropdownBreed);
+
+ function mapDispatchToProps(dispatch) {
+  return bindActionCreators({fetchAnimals, fetchByBreed}, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(DropdownBreed);

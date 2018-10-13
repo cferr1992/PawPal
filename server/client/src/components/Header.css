@@ -21,6 +21,7 @@
 
 .nav-wrapper {
     background-color: #1166DA;
+    text-decoration:none;
 }
 
 a.brand-logo {
@@ -28,8 +29,64 @@ a.brand-logo {
 }
 
 .logo {
-    margin-left: 15%;
+    margin-left: 50%;
     height: 100%;
     width: 150px;
     margin-bottom: 5px;
+}
+
+.nav-items-right {
+    margin-right: 120px;
+}
+
+.search-bar {
+    height: 30px !important;
+}
+
+.search-icon {
+    width: 24px;
+    margin: 0px !important;
+    float: right;
+}
+
+.search-bar-item {
+    width: 400px;
+    height: 64px;
+}
+
+.search-bar-item a {
+    height: 64px;
+}
+
+.search-bar-input {
+    width: 340px !important;
+    height: 46px;
+    position: absolute;
+    color: white;
+    text-decoration-color: red;
+
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
 }

@@ -3,6 +3,7 @@ import axios from "axios"
 const ROOT_URL = "http://localhost:5000"
 
 export const FETCH_ANIMALS = "FETCH_ANIMALS"
+export const FETCH_BREEDS = "FETCH_BREEDS"
 
 // function _buildFilterOptions(query) {
 //   let queryParams = []
@@ -19,13 +20,24 @@ export const FETCH_ANIMALS = "FETCH_ANIMALS"
 //   //return queryParams.length > 0 ? '?' + queryParams.join('&') : '';
 // }
 
-export function fetchAnimals() {
-  
-  let url = ROOT_URL + '/animals'
+export function fetchAnimals(breed, page) {
+
+  let url = ROOT_URL + '/animals?breed=' + breed +'&page=' + page + '&sort=lowest';
   const request = axios.get(url, {headers: { "Content-Type" : "application/json"}})
-console.log(request)
+
   return {
     type: FETCH_ANIMALS,
+    payload: request
+  };
+}
+
+export function fetchByBreed(breed) {
+
+  let url = ROOT_URL + '/animals?breed=' + breed;
+  const request = axios.get(url, {headers: { "Content-Type" : "application/json" }})
+
+  return {
+    type: FETCH_BREEDS,
     payload: request
   };
 }

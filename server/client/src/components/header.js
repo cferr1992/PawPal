@@ -13,14 +13,20 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <Navbar brand={Img} right fixed="true">
-                    <NavItem href='get-started.html'><Icon>search</Icon></NavItem>
-                    <NavItem href='get-started.html'><Icon>view_module</Icon></NavItem>
-                    <NavItem href='/about'>About</NavItem>
-                    <NavItem href='/animals'>Animals</NavItem>
-                    <NavItem href='/signup'>Sign Up</NavItem>
+                <Navbar brand={Img} right fixed={true}>
+                    <div className="nav-items-right">
+                        {/* <NavItem onClick={() => console.log('test')} className="drop-down-header">Dropdown</NavItem> */}
+                        <NavItem onClick={() => console.log('test click')} 
+                            className="search-bar-item">
+                            <input className="search-bar-input" id="search" type="search"></input>
+                            <Icon className="search-icon">search</Icon></NavItem>
+                        {/* <NavItem href='get-started.html'><Icon>view_module</Icon></NavItem> */}
+                        <NavItem href='/animals'>Animals</NavItem>
+                        <NavItem href='/about'>About</NavItem>
+                        <NavItem href='/signup'>Sign Up</NavItem>
+                    </div>
                 </Navbar>
-                <DropdownBreed />
+                {/* <DropdownBreed /> */}
             </div>
         );
     }

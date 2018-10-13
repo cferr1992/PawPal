@@ -1,6 +1,6 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  font-family: 'roboto', sans-serif;
+}
 
 .animal-container {
   width: 30%;
@@ -14,12 +14,12 @@
   float: left;
   font-size:1vw;
 }
-
+/* 
 .animal-image {
   width: 50%;
   height: 50%;
   float: left;
-}
+} */
 
 span {
   float: left;

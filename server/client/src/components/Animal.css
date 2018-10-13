@@ -1,6 +1,65 @@
-/* .animal-list-container {
+.animal-list-container {
     color: black;
     font-family: 'Roboto', sans-serif;
     margin-left: 8.33333%;
 }
-   */
+
+.animal-card {
+    height: 100%;
+}
+
+.animal-container {
+    height: 380px;
+}
+
+.card-image {
+    height: 320px;
+}
+
+.card-title {
+    padding: 0px !important;
+}
+
+.card-content {
+    padding-bottom: 0px !important;
+    padding-left: 15px !important;
+    padding-top: 15px !important;
+    padding-right: 0px !important;
+}
+
+.card .card-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.animal-age {
+    float: right;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.animal-breed {
+    float: right;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.animal-description  {
+    float: right;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.animal-email {
+    float: right;
+    font-size: 1.2rem;
+}
+
+.pagination {
+    margin-left: 45%;
+}
+
+img {
+    height: 100%;
+}

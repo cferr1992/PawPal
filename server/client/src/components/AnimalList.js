@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import { Pagination } from 'react-materialize'
 import Animal from './Animal.js'
-// import './Animal.css';
+import DropdownBreed from './DropdownBreed.js'
+import './Animal.css';
 
 //Creates a list of animals
 
@@ -11,16 +11,17 @@ class AnimalList extends Component {
 
   render() {
     return (
-      <div className="animal-list-container">
+      <DropdownBreed>
         <div>
-          {
-            this.props.animals.map(animal => 
-              <Animal animal={animal} key={animal._id}/>
-            )
-          }
+          <div className="animal-list-container">
+            {
+              this.props.animals.map(animal => 
+                <Animal animal={animal} key={animal._id}/>
+              )
+            }
+          </div>
         </div>
-        <Pagination items={9} activePage={1} maxButtons={5} />
-      </div>
+      </DropdownBreed>
     );
   }
 }

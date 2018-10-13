@@ -1,7 +1,8 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    left: 43%;
+    left: 46%;
+    margin-top: 10px;
 }
 
 /* ul {
