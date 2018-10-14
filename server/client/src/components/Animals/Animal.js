@@ -26,7 +26,7 @@ const animalEmail = "mailto:" + this.props.animal.email + "?subject=Let's%20Meet
             title={this.props.animal.name}
             reveal={<div>
                       <div className="circle-pic-container">
-                      <img className="circle-pic circle responsive-img" src={this.props.animal.imgURL} alt="profile pic" />
+                      <a href="/animals/detail"><img className="circle-pic circle responsive-img" src={this.props.animal.imgURL} alt="profile pic" /></a>
                       </div>
                       <div className="animal-age">
                         <strong>Age: </strong>{animalAge}
