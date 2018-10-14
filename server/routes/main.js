@@ -42,8 +42,8 @@ router.get('/animals', (req, res, next) => {
 })
 
 router.get('/animals/:animalid', (req, res, next) => {
+  let animalId = req.params.animalid
 
-  
 
 })
 

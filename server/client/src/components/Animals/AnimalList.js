@@ -27,7 +27,6 @@ class AnimalList extends Component {
 }
 
 function mapStateToProps({animal}) {
-  console.log(animal);
   return {
     animals: animal.animals || []
   };
