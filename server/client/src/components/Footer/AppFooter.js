@@ -2,11 +2,17 @@ import React, { Component } from 'react'
 import { Footer } from 'react-materialize'
 
 import './AppFooter.css'
+import LogoWhite from '../../pictures/LogoWhite.png'
+
+//Header component to be displayed on every page
+
+const Img = <img className="logo "responsive-img src={LogoWhite} alt="Logo"/>
+
 
 class AppFooter extends Component {
     render () {
         return (
-        <Footer copyrights="&copy 2015 Copyright Text"
+        <Footer
           moreLinks={<div>
 
             <a class="waves-effect waves-light btn-floating social facebook">
@@ -27,8 +33,8 @@ class AppFooter extends Component {
           }
           className='example'
         >
-            <h5 className="white-text">Footer Content</h5>
-            <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <img src={LogoWhite} alt="PawPal" />
+            <p className="grey-text text-lighten-4">Paws. People. Pals.</p>
         </Footer>
         )
     }

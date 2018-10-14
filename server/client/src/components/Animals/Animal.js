@@ -13,7 +13,9 @@ class Animal extends Component {
 const animalAge = this.props.animal.age;
 const animalBreed = this.props.animal.breed;
 const animalDescription = this.props.animal.description;
-const animalEmail = this.props.animal.email;
+const animalEmail = "mailto:" + this.props.animal.email + "?subject=Let's%20Meet!" 
+  + "&body=I'm%20interested%20in%20meeting%20" + this.props.animal.name 
+  + ".%20When%20and%20where%20would%20you%20like%20to%20meet?";
 
     return (
       <div className="animal-container">
@@ -37,7 +39,7 @@ const animalEmail = this.props.animal.email;
                       </div>
                       <div className="animal-email">
                         {/* <strong>Contact: </strong> {animalEmail} */}
-                        <Button floating large className='red' waves='light' icon='email' />
+                        <a href={animalEmail}><Button floating large className='red' waves='light' icon='email' /></a>
                       </div>
                     </div>}>
                     <div>

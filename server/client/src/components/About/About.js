@@ -10,7 +10,7 @@ class About extends Component {
 
     render () {
         return(
-            <div>
+            <div className="about-container">
                 <Row>
                     <Col s={4}>
                         <img className="about-image" src={DogAndBoy} alt="Dog and boy" />  

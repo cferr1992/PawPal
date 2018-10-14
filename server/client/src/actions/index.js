@@ -4,7 +4,7 @@ const ROOT_URL = "http://localhost:5000"
 
 export const FETCH_ANIMALS = "FETCH_ANIMALS"
 export const FETCH_BREEDS = "FETCH_BREEDS"
-export const FETCH_ANIMALS_BY_ID = "FETCH_ANIMALS_BY_ID"
+export const FETCH_ANIMAL_BY_ID = "FETCH_ANIMAL_BY_ID"
 
 // function _buildFilterOptions(query) {
 //   let queryParams = []
@@ -43,13 +43,13 @@ export function fetchByBreed(breed) {
   };
 }
 
-export function fetchProfile(animalid) {
+export function fetchAnimalById(animalid) {
 
-  let url = ROOT_URL + 'animals?id=' + animalid;
+  let url = ROOT_URL + 'animals/' + animalid;
   const request = axios.get(url, {headers: {"Content-Type" : "application/json" }})
 
   return {
-    type: FETCH_ANIMALS_BY_ID,
+    type: FETCH_ANIMAL_BY_ID,
     payload: request
   };
 }
