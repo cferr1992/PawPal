@@ -1,0 +1,21 @@
+.image {
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+}
+
+.centered-below {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+}

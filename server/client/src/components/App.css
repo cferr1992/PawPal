@@ -2,25 +2,6 @@
   font-family: 'roboto', sans-serif;
 }
 
-.animal-container {
-  width: 30%;
-  display: inline-block;
-  margin: 10px;
-}
-
-.animal-field {
-  margin-left: 3px;
-  margin-right: 3px;
-  float: left;
-  font-size:1vw;
-}
-/* 
-.animal-image {
-  width: 50%;
-  height: 50%;
-  float: left;
-} */
-
 span {
   float: left;
   clear: left;

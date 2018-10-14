@@ -15,6 +15,7 @@
     "react-dom": "^16.5.2",
     "react-dropdown": "^1.6.2",
     "react-materialize": "^2.4.6",
+    "react-parallax": "^2.0.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",

@@ -1,0 +1,97 @@
+@media(max-width: 600px) {
+    .animal-container {
+        width: 100%;
+    }
+  }
+
+@media(max-width: 1800px) {
+    .animal-container {
+        width: 30%;
+    }
+}
+
+.animal-list-container {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 8.33333%;
+}
+
+.animal-container {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .animal-field {
+    margin-left: 3px;
+    margin-right: 3px;
+    float: left;
+    font-size:1vw;
+  }
+
+  /* 
+  .animal-image {
+    width: 50%;
+    height: 50%;
+    float: left;
+  } */
+
+
+/* .animal-card {
+    height: 100%;
+}
+
+.animal-container {
+    height: 380px;
+}
+
+.card-image {
+    height: 100%;
+} */
+
+.card-title {
+    padding: 0px !important;
+}
+
+.card-content {
+    padding-bottom: 0px !important;
+    padding-left: 15px !important;
+    padding-top: 15px !important;
+    padding-right: 0px !important;
+}
+
+.card .card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.animal-age {
+    float: left;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.animal-breed {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.animal-description  {
+    float: left;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.animal-email {
+    float: left;
+    font-size: 1.2rem;
+}
+
+.pagination {
+    margin-left: 45%;
+}
+
+.card-img img {
+    height: 50% !important;
+}
