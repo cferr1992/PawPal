@@ -8,6 +8,7 @@ import Signup from './Signup/Signup.js'
 import Landing from './Landing/Landing.js'
 import MapTest from './MapTest.js'
 import AnimalDetail from './Animals/AnimalDetail.js'
+import AppFooter from './Footer/AppFooter.js'
 import './App.css'
 
 // import DropdownTest from './DropdownTest.js'
@@ -26,6 +27,7 @@ class App extends Component {
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/map" component={MapTest} />
             <Route exact path="/animals/detail" component={AnimalDetail} />
+            <AppFooter />
           </div>
         </BrowserRouter>
 

@@ -14,11 +14,16 @@ class Header extends Component {
             <div>
                 <Navbar brand={Img} right fixed={true}>
                     <div className="nav-items-right">
-                        {/* <NavItem onClick={() => console.log('test')} className="drop-down-header">Dropdown</NavItem> */}
                         <NavItem onClick={() => console.log('test click')} 
                             className="search-bar-item">
-                            <input className="search-bar-input" id="search" type="search"></input>
-                            <Icon className="search-icon">search</Icon></NavItem>
+                            <form>
+                                <div class="input-field">
+                                    <input id="search" type="search" required />
+                                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                    <i class="material-icons">close</i>
+                                </div>
+                            </form> 
+                        </NavItem>
                         {/* <NavItem href='get-started.html'><Icon>view_module</Icon></NavItem> */}
                         <NavItem href='/animals'>Animals</NavItem>
                         <NavItem href='/about'>About</NavItem>

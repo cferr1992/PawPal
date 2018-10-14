@@ -4,15 +4,12 @@ const Animal = require('../models/animal.js')
 router.get('/animals', (req, res, next) => {
 
   const perPage = 9
-
   const page = req.query.page || 1
-
   let filter = {}
   
   if (req.query.breed) {
     filter.breed = req.query.breed;
   }
-
 
   const sort = {};
   switch(req.query.sort) {
@@ -23,8 +20,6 @@ router.get('/animals', (req, res, next) => {
       sort.name = "desc"
       break;
   }
-
-
 
   Animal
     .find(filter)
@@ -43,6 +38,12 @@ router.get('/animals', (req, res, next) => {
         res.json({pages, animals});
         })
     })
+
+})
+
+router.get('/animals/:animalid', (req, res, next) => {
+
+  
 
 })
 

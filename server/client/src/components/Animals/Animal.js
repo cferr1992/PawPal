@@ -23,6 +23,9 @@ const animalEmail = this.props.animal.email;
             waves='light'/>}
             title={this.props.animal.name}
             reveal={<div>
+                      <div className="circle-pic-container">
+                      <img className="circle-pic circle responsive-img" src={this.props.animal.imgURL} alt="profile pic" />
+                      </div>
                       <div className="animal-age">
                         <strong>Age: </strong>{animalAge}
                       </div>
@@ -33,7 +36,7 @@ const animalEmail = this.props.animal.email;
                         <strong>Description: </strong> {animalDescription}
                       </div>
                       <div className="animal-email">
-                        <strong>Contact: </strong> {animalEmail}
+                        {/* <strong>Contact: </strong> {animalEmail} */}
                         <Button floating large className='red' waves='light' icon='email' />
                       </div>
                     </div>}>

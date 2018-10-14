@@ -1,7 +1,23 @@
-@media(max-width: 600px) {
+@media(max-width: 400px) {
     .animal-container {
-        width: 100%;
+        width: 320px !important;
     }
+    body {
+        background-color:#C1E3F5;
+        max-width: 400px;
+    }
+  }
+
+  @media(max-width: 700px) {
+    .animal-container {
+        width: 350px !important;
+    }
+
+body {
+        background-color: #C1E3F5;
+        max-width: 400px;
+    }
+    
   }
 
 @media(max-width: 1800px) {
@@ -10,10 +26,16 @@
     }
 }
 
+@media(max-width: 5000px) {
+    .animal-container {
+        width: 30%;
+    }
+}
+
 .animal-list-container {
     color: black;
     font-family: 'Roboto', sans-serif;
-    margin-left: 8.33333%;
+    margin-left: 5%;
 }
 
 .animal-container {
@@ -28,25 +50,28 @@
     font-size:1vw;
   }
 
-  /* 
+  
   .animal-image {
     width: 50%;
     height: 50%;
     float: left;
-  } */
+  }
 
-
-/* .animal-card {
-    height: 100%;
+.animal-card {
+    height: 100% !important;
 }
 
 .animal-container {
-    height: 380px;
+    height: 400px;
 }
 
 .card-image {
-    height: 100%;
-} */
+    height: 100% !important;
+    max-height: 80% !important;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .card-title {
     padding: 0px !important;
@@ -68,6 +93,7 @@
     float: left;
     font-size: 1.2rem;
     display: block;
+    width: 100%;
 }
 
 .animal-breed {
@@ -75,6 +101,7 @@
     margin-right: 10px;
     font-size: 1.2rem;
     display: block;
+    width: 100%;
 }
 
 .animal-description  {
@@ -86,12 +113,47 @@
 .animal-email {
     float: left;
     font-size: 1.2rem;
+    width:100%;
 }
 
 .pagination {
     margin-left: 45%;
 }
 
-.card-img img {
-    height: 50% !important;
+img {
+    min-height: 80% !important;
+    max-height: 100% !important;
+}
+
+.circle-pic {
+    height: 150px !important;
+    width: 150px;
+    margin-left: 33%;
+}
+
+.card-title .material-icons {
+    right: 5px;
+    float: right !important;
+}
+
+.card-title {
+    float: none;
+}
+
+.card-reveal .card-title {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.animal-email button {
+    float: right;
+    right: 0;
+}
+
+.card-reveal {
+    
+}
+
+body {
+    background-color: rgb(204, 216, 223);
 }

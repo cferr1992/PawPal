@@ -24,19 +24,23 @@
     text-decoration:none;
 }
 
+.input-field {
+    background-color: transparent;
+}
+
+.input-field input[type=search]:focus {
+    background-color: transparent;
+    color: #DDDDDD;
+}
+
 a.brand-logo {
     margin-left: 10px;
 }
 
 .logo {
-    margin-left: 100%;
     height: 100%;
     width: 150px;
     margin-bottom: 5px;
-}
-
-.nav-items-right {
-    margin-right: 120px;
 }
 
 .search-bar {
@@ -89,4 +93,24 @@ a:hover {
 a:active {
     color: white;
     text-decoration: none;
+}
+
+#nav-mobile {
+    background-color: rgb(53, 231, 255) !important;
+}
+
+#nav-mobile a:active {
+    color: black;
+}
+
+#nav-mobile a:hover {
+    color: black;
+}
+
+#nav-mobile a:visited {
+    color: black;
+}
+
+#nav-mobile .nav-items-right .search-bar-item a form .input-field .material-icons {
+    color: black !important;
 }
