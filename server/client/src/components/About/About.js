@@ -12,10 +12,10 @@ class About extends Component {
         return(
             <div className="about-container">
                 <Row>
-                    <Col s={4}>
+                    <Col s={12} l={4}>
                         <img className="about-image" src={PuppiesAndGirl} alt="Dog and boy" />  
                     </Col>
-                    <Col s={4}>
+                    <Col s={12} l={4}>
                         <div className="about-text">
                             <p>
                             Have you ever felt stressed out and wished you could play with
@@ -28,7 +28,7 @@ class About extends Component {
                             </p>
                         </div>  
                     </Col>
-                    <Col s={4}>
+                    <Col s={12} l={4}>
                         <img className="about-image" src={PuppyPlay1} alt="Puppies playing" />  
                     </Col>
                 </Row>

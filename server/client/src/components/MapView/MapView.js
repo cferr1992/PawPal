@@ -14,7 +14,7 @@ class MapView extends Component {
           lat: 35.942568,
           lng: -78.834405
         },
-        zoom: 10
+        zoom: 9
       };
 
       render () {
@@ -23,9 +23,9 @@ class MapView extends Component {
         const mapIcon =  <i class="material-icons map-icon">pets</i>;
 
         return (
-            <div>
+            <div className="map-component-container">
                 <Button className="list-view" waves='light' node='a' href='/animals'>List View</Button>
-                <div style={{ height: '500px', width: '500px', marginLeft: '33%', marginTop: '20px', marginBottom: '20px' }}>
+                <div className="map">
                     <GoogleMapReact
                         bootstrapURLKeys={{ key: 'AIzaSyDuXHhP6RI3zijuvdtdq3oYd3OZgMHirYA' }}
                         defaultCenter={this.props.center}

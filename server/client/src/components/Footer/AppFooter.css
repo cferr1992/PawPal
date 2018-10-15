@@ -29,3 +29,41 @@ footer {
     background: #bb0000;
     color: white;
   }
+
+.footer-logo {
+    height: 50%;
+    width: 50%;
+}
+
+.footer-description{
+    color: black;
+    margin-bottom: 5px;
+}
+
+.footer-links-left{
+    float: left;
+}
+
+.footer-links-right{
+    float: right;
+}
+
+.tag-line {
+    margin-bottom: 5px;
+}
+
+@media(max-width: 500px) {
+
+    .footer-links-left{
+        float: left;
+    }
+
+    .footer-links-right{
+        float: right;
+    }
+    
+    .footer-description {
+        font-size: 16px;
+    }
+
+  }

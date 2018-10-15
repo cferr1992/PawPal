@@ -19,3 +19,26 @@
     color: black;
     font-size: 24px;
 }
+
+@media(max-width: 500px) {
+    .centered {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .centered-below {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+  }

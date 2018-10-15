@@ -13,7 +13,7 @@ class Header extends Component {
     render() {
         return (
             <div>
-                <Navbar brand={Img} right fixed={true}>
+                <Navbar brand={Img} right>
                     <div className="nav-items-right">
                         <NavItem onClick={() => console.log('test click')} 
                             className="search-bar-item">

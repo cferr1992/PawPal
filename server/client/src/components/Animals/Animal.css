@@ -1,23 +1,49 @@
-@media(max-width: 400px) {
+
+@media(max-width: 500px) {
     .animal-container {
         width: 320px !important;
+    }
+    .animal-list-container {
+        margin-left: 0px !important;
     }
     body {
         background-color:#C1E3F5;
         max-width: 400px;
     }
+    .dropdown-button {
+        font-size: 16px;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .map-view {
+        font-size: 16px;
+        float: right;
+        padding-bottom: 10px;
+        margin-top: 12px !important;
+    }
+    .dropdown {
+        left: 10px !important;
+    }
   }
 
-  @media(max-width: 700px) {
+  @media(max-width: 800px) {
     .animal-container {
         width: 350px !important;
     }
 
-body {
+    body {
         background-color: #C1E3F5;
         max-width: 400px;
     }
-    
+    .map-view {
+        font-size: 16px;
+        float: right;
+        padding-bottom: 10px;
+        margin-top: 12px !important;
+    }
+    .dropdown {
+        left: 10px !important;
+    }
   }
 
 @media(max-width: 1800px) {

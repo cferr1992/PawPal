@@ -4,7 +4,7 @@
   "description": "PawPal is a program designed to match puppies with people or other puppies for playdates.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Charles Ferringer Jr.",
   "license": "ISC",
@@ -22,9 +22,5 @@
     "passport": "^0.4.0",
     "path-parser": "^4.2.0",
     "redux-thunk": "^2.3.0"
-  },
-  "engines": {
-    "node": "8.1.1",
-    "npm": "5.0.3"
   }
 }

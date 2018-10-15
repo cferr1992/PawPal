@@ -6,3 +6,37 @@
     float: right;
     margin-right: 10px;
 }
+
+
+.map {
+    height: 500px;
+    width: 500px;
+    margin-left: 33%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .map {
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 300px;
+        width: 80vw;
+        }
+    .btn {
+        margin-top: 2px;
+    }
+    /* .gm-control-active {
+        height: 20px !important;
+        width: 20px !important;
+    }
+    .gmnoprint {
+        height: 40px !important;
+        width: 20px !important;
+        margin: 0px !important;
+    }
+    .gmnoprint div {
+        height: 40px !important;
+        width: 20px !important;
+    } */
+}
