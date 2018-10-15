@@ -21,6 +21,7 @@ export const FETCH_ANIMAL_BY_ID = "FETCH_ANIMAL_BY_ID"
 //   //return queryParams.length > 0 ? '?' + queryParams.join('&') : '';
 // }
 
+//Fetches animals for animal list
 export function fetchAnimals(breed, page) {
 
   let url = ROOT_URL + '/animals?breed=' + breed +'&page=' + page + '&sort=lowest';
@@ -32,6 +33,7 @@ export function fetchAnimals(breed, page) {
   };
 }
 
+//Fetches breeds for breed dropdown list
 export function fetchByBreed(breed) {
 
   let url = ROOT_URL + '/animals?breed=' + breed;
@@ -43,9 +45,10 @@ export function fetchByBreed(breed) {
   };
 }
 
+//Fetches animals by their ID in order to access animal details page
 export function fetchAnimalById(animalid) {
 
-  let url = ROOT_URL + 'animals/' + animalid;
+  let url = ROOT_URL + '/animals/' + animalid;
   const request = axios.get(url, {headers: {"Content-Type" : "application/json" }})
 
   return {

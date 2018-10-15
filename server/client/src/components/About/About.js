@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
+import { Col, Row } from 'react-materialize'
 
 import '../About/About.css'
-import { Col, Row } from 'react-materialize'
-import DogAndBoy from '../../pictures/DogAndBoy.jpg'
+import PuppiesAndGirl from '../../pictures/PuppiesAndGirl.jpg'
 import PuppyPlay1 from '../../pictures/PuppyPlay1.jpg'
 
 
@@ -13,7 +13,7 @@ class About extends Component {
             <div className="about-container">
                 <Row>
                     <Col s={4}>
-                        <img className="about-image" src={DogAndBoy} alt="Dog and boy" />  
+                        <img className="about-image" src={PuppiesAndGirl} alt="Dog and boy" />  
                     </Col>
                     <Col s={4}>
                         <div className="about-text">

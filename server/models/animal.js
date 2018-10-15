@@ -7,7 +7,9 @@ const AnimalSchema = new Schema ({
     age: String,
     breed: String,
     email: String,
-    description: String
+    description: String,
+    lat: String,
+    lng: String
 });
 
 module.exports = mongoose.model('animal', AnimalSchema);

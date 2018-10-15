@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import { Navbar, NavItem, Icon } from 'react-materialize'
+import { Navbar, NavItem } from 'react-materialize'
 import './Header.css'
 import LogoWhite from '../../pictures/LogoWhite.png'
 
 //Header component to be displayed on every page
 
-const Img = <img className="logo "responsive-img src={LogoWhite} alt="Logo"/>
+const Img = <img class="logo responsive-img" src={LogoWhite} alt="Logo"/>
 
 class Header extends Component {
 

@@ -4,7 +4,7 @@
 
 .centered {
     position: absolute;
-    top: 47%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
@@ -13,7 +13,7 @@
 
 .centered-below {
     position: absolute;
-    top: 57%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
