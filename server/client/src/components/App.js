@@ -12,12 +12,12 @@ import MapView from './MapView/MapView.js'
 import './App.css'
 
 // import DropdownTest from './DropdownTest.js'
-
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-
+        {/* Sets up the separate pages throughout the site */}
         <BrowserRouter>
           <div>
             <Header />
@@ -30,8 +30,6 @@ class App extends Component {
             <AppFooter />
           </div>
         </BrowserRouter>
-
-      {/* <DropdownTest /> */}
       </div>
     );
   }

@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const Animal = require('../models/animal.js')
 
+//Sets up get/read route for the animals list
 router.get('/animals', (req, res, next) => {
 
   const perPage = 9
@@ -38,16 +39,15 @@ router.get('/animals', (req, res, next) => {
         res.json({pages, animals});
         })
     })
-
 })
 
+//Sets up get/read route for animal details page
 router.get('/animals/:animalid', (req, res, next) => {
   let animalId = req.params.animalid
   
   Animal.findById(animalId, function(err, animal) { 
     res.json(animal)
   })
-
 })
 
 module.exports = router

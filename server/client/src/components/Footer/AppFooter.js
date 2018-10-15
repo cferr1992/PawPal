@@ -4,15 +4,14 @@ import { Footer } from 'react-materialize'
 import './AppFooter.css'
 import LogoWhite from '../../pictures/LogoWhite.png'
 
-//Header component to be displayed on every page
-
+//Footer component to be displayed on every page
 class AppFooter extends Component {
+  
     render () {
         return (
-        <Footer
-          copyrights="©2018 PawPal.com"
-          moreLinks={<div>
-
+          <Footer
+            copyrights="©2018 PawPal.com"
+            moreLinks={<div>
             <a href="http://www.facebook.com" className="waves-effect waves-light btn-floating social facebook">
               <i className="fa fa-facebook" /></a>
             <a href="http://www.twitter.com" className="waves-effect waves-light btn-floating social twitter">
@@ -31,11 +30,12 @@ class AppFooter extends Component {
             </ul>
           }
           className='example'
-        >
-            <img src={LogoWhite} alt="PawPal" />
-            <p className="grey-text text-lighten-4">Paws. People. Pals.</p>
+          >
+          <img src={LogoWhite} alt="PawPal" />
+          <p className="grey-text text-lighten-4">Paws. People. Pals.</p>
         </Footer>
         )
     }
 }
+
 export default AppFooter;

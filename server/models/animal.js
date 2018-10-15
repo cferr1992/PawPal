@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
+//Creates animal schema
 const AnimalSchema = new Schema ({
     imgURL: String,
     name: String,

@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import { connect } from "react-redux"
-import { fetchAnimalById } from '../../actions'
 import { bindActionCreators } from "redux"
+import { connect } from "react-redux"
+import { Row, Col } from 'react-materialize'
 import GoogleMapReact from 'google-map-react';
 
-import { Row, Col } from 'react-materialize'
+import { fetchAnimalById } from '../../actions'
 
-
+//Creates marker icon for map
 const Marker = ({ text }) => <div>{text}</div>;
 
+//Creates animal details page
 class AnimalDetail extends Component {
 
     //Centers the map between Durham and Raleigh by default
@@ -20,20 +21,26 @@ class AnimalDetail extends Component {
         zoom: 9
       };
 
+    //Fetches animals by ID to display data unique to their profile
     componentDidMount() {
         this.props.fetchAnimalById(this.props.match.params.animalid);
     }
 
     render () {
 
+        //Creates icon for map
         const mapIcon =  <i class="material-icons map-icon">pets</i>;
+
+        //Creates proper route for profile pictures
         const imgRoot = "../." + this.props.details.imgURL;
+
+        //Creates email template
         const animalEmail = "mailto:" + this.props.details.email + "?subject=Let's%20Meet!" 
             + "&body=I'm%20interested%20in%20meeting%20" + this.props.details.name 
             + ".%20When%20and%20where%20would%20you%20like%20to%20meet?";
     
         return (
-            <div>
+            <div className="profile-container">
                 <Row className="profile-row">
                     <Col s={4}>
                         <div>

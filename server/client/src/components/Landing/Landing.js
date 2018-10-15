@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Button } from 'react-materialize'
 
+import './Landing.css'
 import DogAndBoy from '../../pictures/DogAndBoy.jpg'
 
-import './Landing.css'
-
+//Creates landing/home page
 class Landing extends Component {
 
     render () {

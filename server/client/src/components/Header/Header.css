@@ -1,24 +1,3 @@
-/* .logo {
-    font-size: 32px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-.container {
-    border-width: 2px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.logo-image {
-    width: 250px;
-    height: 80px;
-}
-
-.header {
-    background-color: #AAAAAA;
-    border: 5px;
-} */
-
 .nav-wrapper {
     background-color: #1166DA;
     text-decoration:none;
@@ -71,25 +50,21 @@ a.brand-logo {
 
 }
 
-/* unvisited link */
 a:link {
     color: white;
     text-decoration: none;
 }
 
-/* visited link */
 a:visited {
     color: white;
     text-decoration: none;
 }
 
-/* mouse over link */
 a:hover {
     color: #BBBBBB;
     text-decoration: none;
 }
 
-/* selected link */
 a:active {
     color: white;
     text-decoration: none;

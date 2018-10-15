@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Row, Input } from 'react-materialize'
 
+//Creates signup component
 class Signup extends Component {
+
     render () {
         return (
             <div className="signup-container">
@@ -35,7 +37,6 @@ class Signup extends Component {
             </div>
         )
     }
-
 }
 
 export default Signup;

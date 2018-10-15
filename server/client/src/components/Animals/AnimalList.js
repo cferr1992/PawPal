@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Button } from 'react-materialize'
+
 import Animal from './Animal.js'
 import DropdownBreed from '../Dropdown/DropdownBreed.js'
-// import MapView from '../MapView/MapView.js'
 import './Animal.css';
 
-//Creates a list of animals
-
+//Creates a list of all animals
 class AnimalList extends Component {
 
   render() {
@@ -25,7 +24,6 @@ class AnimalList extends Component {
             </div>
           </div>
         </DropdownBreed>
-
       </div>
     );
   }

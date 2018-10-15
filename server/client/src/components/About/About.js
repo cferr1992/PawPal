@@ -5,7 +5,7 @@ import '../About/About.css'
 import PuppiesAndGirl from '../../pictures/PuppiesAndGirl.jpg'
 import PuppyPlay1 from '../../pictures/PuppyPlay1.jpg'
 
-
+//Creates About page
 class About extends Component {
 
     render () {

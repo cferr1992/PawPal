@@ -6,21 +6,6 @@ export const FETCH_ANIMALS = "FETCH_ANIMALS"
 export const FETCH_BREEDS = "FETCH_BREEDS"
 export const FETCH_ANIMAL_BY_ID = "FETCH_ANIMAL_BY_ID"
 
-// function _buildFilterOptions(query) {
-//   let queryParams = []
-//   for(var key in query)
-//     //only look at the object, do not look at its
-//     //prototype
-//     if (query.hasOwnProperty(key))
-//       queryParams.push(key + "=" + query[key])
-  
-//   if(queryParams.length > 0)
-//     return '?' + queryParams.join('&');
-//   else
-//     return '';
-//   //return queryParams.length > 0 ? '?' + queryParams.join('&') : '';
-// }
-
 //Fetches animals for animal list
 export function fetchAnimals(breed, page) {
 
